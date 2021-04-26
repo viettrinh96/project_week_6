@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
-import AlertMsg from "../components/AlertMsg";
 import PublicNavbar from "../components/PublicNavbar";
 import SideMenu from "../components/SideMenu";
 import AddEditBlogPage from "../pages/AddEditBlogPage";
@@ -21,7 +20,6 @@ const AdminLayout = () => {
             <SideMenu />
           </Col>
           <Col md={9} lg={10}>
-            <AlertMsg />
             <Switch>
               <Route exact path="/admin/profile" component={ProfilePage} />
               <Route exact path="/admin/friends" component={FriendListPage} />
